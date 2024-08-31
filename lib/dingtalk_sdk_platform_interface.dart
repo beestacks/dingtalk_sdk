@@ -23,7 +23,11 @@ abstract class DingtalkSdkPlatform extends PlatformInterface {
     _instance = instance;
   }
 
-  Future<String?> getPlatformVersion() {
-    throw UnimplementedError('platformVersion() has not been implemented.');
+  Future<bool?> registerAppWithIdentifierForOrgApp(String appId, String bundleId) {
+    throw UnimplementedError('registerAppWithIdentifierForOrgApp() has not been implemented.');
+  }
+
+  Future<bool?> sendAuthForOrgApp(String redirectUrl, {String responseType = 'code', String scope = 'openid', String prompt = 'consent', String state = '', String nonce = ''}) {
+    throw UnimplementedError('sendAuthForOrgApp() has not been implemented.');
   }
 }

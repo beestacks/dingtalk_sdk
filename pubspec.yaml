@@ -1,5 +1,5 @@
 name: dingtalk_sdk
-description: "A new Flutter plugin project."
+description: "钉钉分享和登录的库"
 version: 0.0.1
 homepage:
 

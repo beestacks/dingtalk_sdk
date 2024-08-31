@@ -1,0 +1,31 @@
+PODS:
+  - dingtalk_sdk (0.0.1):
+    - dingtalk_sdk/vendor (= 0.0.1)
+    - Flutter
+  - dingtalk_sdk/vendor (0.0.1):
+    - Flutter
+  - Flutter (1.0.0)
+  - integration_test (0.0.1):
+    - Flutter
+
+DEPENDENCIES:
+  - dingtalk_sdk (from `.symlinks/plugins/dingtalk_sdk/ios`)
+  - Flutter (from `Flutter`)
+  - integration_test (from `.symlinks/plugins/integration_test/ios`)
+
+EXTERNAL SOURCES:
+  dingtalk_sdk:
+    :path: ".symlinks/plugins/dingtalk_sdk/ios"
+  Flutter:
+    :path: Flutter
+  integration_test:
+    :path: ".symlinks/plugins/integration_test/ios"
+
+SPEC CHECKSUMS:
+  dingtalk_sdk: 831127122b3a18ccd27da078a3ee6d34d5d3ee81
+  Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
+  integration_test: 252f60fa39af5e17c3aa9899d35d908a0721b573
+
+PODFILE CHECKSUM: 6e700dec67e6deac9b1c69bb14c49a2217a12d15
+
+COCOAPODS: 1.15.2
