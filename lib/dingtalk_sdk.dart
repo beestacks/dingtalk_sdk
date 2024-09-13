@@ -13,4 +13,8 @@ class DingtalkSdk {
   static Future<bool?> sendAuthForOrgApp({required String redirectUrl, String responseType = 'code', String scope = 'openid', String prompt = 'consent', String state = '', String nonce = ''}) {
     return DingtalkSdkPlatform.instance.sendAuthForOrgApp(redirectUrl, responseType: responseType, scope: scope, prompt: prompt, state: state, nonce: nonce);
   }
+
+  static Future<bool?> isDingtalkInstalled() {
+    return DingtalkSdkPlatform.instance.isDingtalkInstalled();
+  }
 }

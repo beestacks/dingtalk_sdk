@@ -1,8 +1,9 @@
 #import <UIKit/UIKit.h>
+#import <ADTOpenAuthSDK/ADTOpenAuthObject.h>
 
 @interface ViewController : UIViewController
 
-- (void)fuckDingtalk;
+- (BOOL)sendDingtalkAuth:(ADTOpenAuthReq*)req;
 
 @end
 

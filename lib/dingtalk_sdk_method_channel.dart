@@ -38,4 +38,9 @@ class MethodChannelDingtalkSdk extends DingtalkSdkPlatform {
       'nonce': nonce,
     });
   }
+
+  @override
+  Future<bool?> isDingtalkInstalled() async {
+    return await methodChannel.invokeMethod<bool>('isDingtalkInstalled');
+  }
 }

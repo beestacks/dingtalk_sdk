@@ -58,6 +58,8 @@ class DingtalkSdkPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
       }
 
       result.success(Auth.sendAuth(redirectUrl, scope, call.argument<String>("responseType"), call.argument<String>("nonce"), call.argument<String>("state"), call.argument<String>("prompt")))
+    } else if (call.method == "isDingtalkInstalled") {
+      result.success(Auth.isDingtalkInstalled())
     } else {
       result.notImplemented()
     }

@@ -16,7 +16,6 @@ A new Flutter plugin project.
   s.source_files = 'Classes/**/*'
   s.public_header_files = 'Classes/**/*.h'
   s.dependency 'Flutter'
-  s.dependency 'Masonry'
   s.platform = :ios, '12.0'
   
 

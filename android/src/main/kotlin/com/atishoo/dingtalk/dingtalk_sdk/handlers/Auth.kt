@@ -1,10 +1,10 @@
 package com.atishoo.dingtalk.dingtalk_sdk.handlers
 
 import android.content.Context
-import com.atishoo.dingtalk.dingtalk_sdk.constant.CallbackResult
 import com.android.dingtalk.openauth.AuthLoginParam
 import com.android.dingtalk.openauth.DDAuthApiFactory
 import com.android.dingtalk.openauth.IDDAuthApi
+import com.android.dingtalk.openauth.utils.DDAuthUtil
 
 object Auth {
     private var appId: String? = null
@@ -40,5 +40,9 @@ object Auth {
         val authApi: IDDAuthApi = DDAuthApiFactory.createDDAuthApi(context, builder.build())
         authApi.authLogin()
         return true;
+    }
+
+    fun  isDingtalkInstalled(): Boolean {
+        return DDAuthUtil.isDDAppInstalled(context);
     }
 }
